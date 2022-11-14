@@ -1,0 +1,34 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel="stylesheet" href="css/index.scss">
+    <title>NEST JS APP</title>
+  </head>
+  <body>
+    <h1>This is Nest JS MVC APP</h1>
+    <a href="test">Go to test page</a>
+    {{#each books}}
+    <div>
+        <h3>{{this.name}}</h3>
+        <span>{{this.author}}</span>
+        <p>{{this.published}}</p>
+    </div>
+    </hr>
+    </br>
+    {{/each}}
+
+
+  </body>
+  
+  <script>
+    {{#each books}}
+
+    var newTemp = `{{this.name}}`
+    console.log(newTemp)
+  
+    {{/each}}
+     </script>
+
+</html>
